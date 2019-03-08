@@ -8,6 +8,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!--My CSS Style-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 
     <title>Word Guess Game</title>
   </head>
@@ -15,10 +19,20 @@
   <body>
 
     <div class="container">
-            <div class="jumbotron" style="align-content: center,">
+            <div class="jumbotron">
                     <h1 class="display-4">Hangman Game</h1>
                     <p class="lead">Press any key to get started!</p>
             </div>
+            <!--Wins Panel-->
+            <div class="panel panel-default">
+                    <div class="wins">WINS</div>
+                    <div class="wins-body"></div>
+            </div>
+            <!--Current Word Panel-->
+            <div class="panel panel-default">
+                    <div class="current-word">Current Word</div>
+                    <div class="current-word-body"></div>
+                  </div>
     </div>
     
 
