@@ -23,23 +23,38 @@
                     <h1 class="display-4">Hangman Game</h1>
                     <p class="lead">Press any key to get started!</p>
             </div>
-            <!--Wins Panel-->
-            <div class="panel panel-default">
-                    <div class="wins">WINS</div>
-                    <div class="wins-body"></div>
+    
+            <div class="panel-group">
+                <!--Wins Panel-->
+                <div class="panel panel-default">
+                        <div class="panel-heading">Wins</div>
+                        <div class="panel-body">
+                            <span id="winCounter">0</span>
+                        </div>
+                </div>
+                <!--Current Word Panel-->
+                <div class="panel panel-default">
+                        <div class="panel-heading">Current Word</div>
+                        <div class="panel-body"></div>
+                </div>
+                <!--Guesses Remaining Panel-->
+                <div class="panel panel-default">
+                        <div class="panel-heading">Number of Guesses Remaining</div>
+                        <div class="panel-body">
+                            <span id="guessesRemaining">9</span>
+                        </div>
+                </div>
+                <!--Letters Guessed-->
+                <div class="panel panel-default">
+                        <div class="panel-heading">Letters Already Guessed</div>
+                        <div class="panel-body">
+                            <span id="lettersGuessed"></span>
+                        </div>
+                </div>
             </div>
-            <!--Current Word Panel-->
-            <div class="panel panel-default">
-                    <div class="current-word">Current Word</div>
-                    <div class="current-word-body"></div>
-                  </div>
     </div>
     
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Javascript-->
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
   </body>
 </html>

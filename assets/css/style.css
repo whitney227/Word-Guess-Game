@@ -2,5 +2,12 @@
     align-content: center;
     text-align: center;
     font-family: 'Acme', sans-serif;
+}
 
+.panel-group{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.panel-heading{
+    font-weight: bold;
 }
