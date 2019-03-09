@@ -78,9 +78,10 @@ function roundComplete(){
     }
 
     else if (guessesLeft == 0) {
-        alert("You are out of guesses. Try again!");
-    document.getElementById("guessesRemaining").innerHTML=guessesLeft;
-    }   
+        wrongLetters = [];
+        startGame();
+        alert("You are out of guesses. Try Again!");
+        }
 }
 
 //Main Process//
@@ -91,6 +92,7 @@ document.onkeyup = function(event) {
     var letterPicked = String.fromCharCode(event.keyCode).toLowerCase();
     checkLetter(letterPicked);  
     roundComplete();   
-
     console.log(letterPicked);
 }
+
+
